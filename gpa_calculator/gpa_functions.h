@@ -38,5 +38,6 @@ bool deansList(double g, int c);
 
 double calculateGPA(std::vector<Course> courses);
 
+int addCourse(std::string cn, int c, std::string g, std::vector<Course> v);
 
 #endif
