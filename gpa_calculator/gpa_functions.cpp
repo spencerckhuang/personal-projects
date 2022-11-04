@@ -4,7 +4,7 @@
 #include <vector>
 
 using std::cout; using std::endl; using std::cerr;
-using std::string; using std::vector;
+using std::string; using std::vector; using std::map;
 
 
 
@@ -38,5 +38,26 @@ bool deansList(double g, int c){
 }
 
 double calculateGPA(vector<Course> courses){
-    return 0.0;
+    int creditSum = 0;
+    double gpa = 0.0;
+
+    map<string, double> gradeValues = {
+            {"A+", 4.0}, {"A", 4.0}, {"A-", 3.7},
+            {"B+", 3.3}, {"B", 3.0}, {"B-", 2.7},
+            {"C+", 2.3}, {"C", 2.0}, {"C-", 1.7},
+            {"D+", 1.3}, {"D", 1.0}, {"F", 0.0},
+    };
+
+    for(vector<Course>::iterator it = courses.begin(); it != courses.end(); ++it){
+        creditSum += (*it).getCredits();
+        map<string, double>::const_iterator gradeIt = gradeValues.find((*it).getGrade());
+        /* shouldn't have to handle error since grade should always be valid */
+        gpa += gradeIt->second * (*it).getCredits();
+    }
+
+    return gpa/creditSum;
+}
+
+void addCourse(string cn, int c, string g, vector<Course>& v){
+    v.push_back(Course(cn, c, g));
 }

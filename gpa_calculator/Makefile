@@ -11,3 +11,6 @@ gpa_calculator.o: gpa_calculator.cpp gpa_functions.h
 
 gpa_functions.o: gpa_functions.cpp gpa_functions.h
 	$(CC) $(CFLAGS) -c gpa_functions.cpp
+
+clean:
+	rm gpa_calculator *.o

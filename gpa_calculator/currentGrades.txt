@@ -1,0 +1,5 @@
+Intermediate_Programming    4   A
+Calculus_2                  4   B
+First_Year_Korean           5   A
+Ethics_of_AI                3   B+
+FYS_Exploring_CS            1   A
