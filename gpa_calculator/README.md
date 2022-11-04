@@ -32,5 +32,5 @@ GPA, I decided to code a GPA calculator so I could see how my
 GPA would look depending on my Calculus grade.
 
 ### Updates
-Nov. 4: Started and finished working version that prints out
+Nov. 4 2022: Started and finished working version that prints out
     GPA and whether the student has made the Dean's List or not.
