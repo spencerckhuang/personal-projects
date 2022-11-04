@@ -20,7 +20,7 @@ and another cpp file to keep my main file as short as possible.
 
 Lastly, since this is my first independent project written with
 Git knowledge, this is also my first time writing a README file
-with Git-flavored markup.__
+with Git-flavored markup.
 
 ### Inspiration
 I made this project for two reasons. Firstly, I have just learned
@@ -32,5 +32,5 @@ GPA, I decided to code a GPA calculator so I could see how my
 GPA would look depending on my Calculus grade.
 
 ### Updates
-Nov. 4: Started and finished working version that prints out__
-    GPA and whether the student has made the Dean's List or not.__
+Nov. 4: Started and finished working version that prints out
+    GPA and whether the student has made the Dean's List or not.
